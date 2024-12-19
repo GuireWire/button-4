@@ -64,7 +64,7 @@
 <body>
     <button class="framer-button" id="buyButton" onclick="handleBuyCoffee()">
         <div class="framer-container">
-            <p class="framer-text" id="buttonText">Buy 3 Coffees</p>
+            <p class="framer-text" id="buttonText">Buy 2 Coffees</p>
             <span class="checkmark" id="checkmark">✓</span>
         </div>
     </button>
@@ -204,7 +204,7 @@
                 // Reset button after 5 seconds
                 setTimeout(() => {
                     button.classList.remove('success');
-                    buttonText.textContent = "Buy 3 Coffees";
+                    buttonText.textContent = "Buy 2 Coffees";
                     checkmark.style.display = 'none';
                     button.disabled = false;
                 }, 5000);
@@ -212,7 +212,7 @@
             } catch (error) {
                 console.error("Error:", error);
                 alert("Transaction failed: " + error.message);
-                buttonText.textContent = "Buy 3 Coffees";
+                buttonText.textContent = "Buy 2 Coffees";
                 button.disabled = false;
             }
         }
